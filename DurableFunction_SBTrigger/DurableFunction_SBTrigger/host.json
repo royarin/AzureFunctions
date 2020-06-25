@@ -1,0 +1,19 @@
+{
+  "version": "2.0",
+  "logging": {
+    "applicationInsights": {
+      "samplingExcludedTypes": "Request",
+      "samplingSettings": {
+        "isEnabled": true
+      }
+    }
+  },
+  "extensions": {
+    "serviceBus": {
+      "messageHandlerOptions": {
+        "autoComplete": false,
+        "maxAutoRenewDuration": "00:05:00"
+      }
+    }
+  }
+}
